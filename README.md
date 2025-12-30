@@ -1,11 +1,6 @@
 # ❤️ BinaryBond V1.0 - Professional Team Portfolio
 
-[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.0.10-646CFF.svg)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.0-38B2AC.svg)](https://tailwindcss.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-10.16.16-0055FF.svg)](https://www.framer.com/motion/)
-
-A professional, modern portfolio website showcasing the BinaryBond V1.0 team - a talented group of 4 computer science students from Adamas University specializing in full-stack development, AI/ML, and innovative tech solutions.
+This repository contains the BinaryBond V1.0 team portfolio — a modern, Vite-powered React site styled with Tailwind CSS and animated with Framer Motion. It documents projects, team members, contact channels, and site sections used in development.
 
 
 ## 🌟 Features
@@ -23,13 +18,14 @@ A professional, modern portfolio website showcasing the BinaryBond V1.0 team - a
 ## 🏗️ Tech Stack
 
 ### Frontend Framework
-- **React 18.2.0** - Modern React with concurrent features
-- **Vite 5.0.10** - Next-generation frontend tooling
+- **React** (project dependency: react ^18.2.0)
+- **Vite** (project dev dependency: vite ^5.0.10)
 
 ### Styling & UI
-- **Tailwind CSS 3.4.0** - Utility-first CSS framework
-- **Framer Motion 10.16.16** - Production-ready motion library
-- **React Icons 4.12.0** - Popular icon library
+- **Tailwind CSS** (dev dependency: tailwindcss ^3.4.0)
+- **Framer Motion** (dependency: framer-motion ^10.16.16)
+- **React Icons** (dependency: react-icons ^4.12.0)
+- **tsParticles** (optional visual particles: `tsparticles`, `react-tsparticles`)
 
 ### Development Tools
 - **ESLint** - Code linting
@@ -45,26 +41,25 @@ A professional, modern portfolio website showcasing the BinaryBond V1.0 team - a
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Binary-Bond/binarybond-v1.0-portfolio.git
-   cd binarybond-v1.0-portfolio
-   ```
+1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd binarybond-v1.0
+```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+2. Install dependencies
+```bash
+npm install
+```
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+3. Start the development server
+```bash
+npm run dev
+```
 
-4. **Open your browser**
-   Navigate to `http://localhost:5173`
+4. Open your browser at `http://localhost:5173`
 
-### Build for Production
+### Build for production
 
 ```bash
 npm run build
@@ -72,7 +67,7 @@ npm run build
 
 The built files will be in the `dist/` directory.
 
-### Preview Production Build
+To preview the production build locally:
 
 ```bash
 npm run preview
@@ -81,50 +76,36 @@ npm run preview
 ## 📁 Project Structure
 
 ```
-binarybond-portfolio/
-├── public/
-│   ├── favicon.ico
-│   └── assets/          # Static assets
+project-root/
+├── public/               # Static assets and manifest
 ├── src/
-│   ├── assets/          # Images and media files
-│   ├── components/      # React components
-│   │   ├── Hero.jsx     # Landing section
-│   │   ├── Navbar.jsx   # Navigation component
-│   │   ├── Team.jsx     # Team member profiles
-│   │   ├── Skills.jsx   # Technical skills showcase
-│   │   ├── Projects.jsx # Project portfolio
-│   │   ├── Workflow.jsx # Development process
-│   │   ├── Achievements.jsx # Team achievements
-│   │   ├── Contact.jsx  # Contact information
-│   │   ├── Footer.jsx   # Site footer
-│   │   └── Effects.jsx  # Animation utilities
-│   ├── App.jsx          # Main application component
-│   ├── main.jsx         # Application entry point
-│   └── index.css        # Global styles
-├── index.html           # HTML template
-├── package.json         # Dependencies and scripts
-├── vite.config.js       # Vite configuration
-├── tailwind.config.js   # Tailwind CSS configuration
-└── README.md           # Project documentation
+│   ├── components/       # React components (Hero, Navbar, Team, Projects, Contact, Footer, etc.)
+│   ├── contexts/         # React contexts (ThemeContext)
+│   ├── App.jsx           # Main application component
+│   ├── main.jsx          # Application entry point (loads `index.css`)
+│   └── index.css         # Global styles and utilities
+├── index.html            # HTML template
+├── package.json          # Dependencies and scripts
+├── vite.config.js        # Vite configuration
+├── tailwind.config.js    # Tailwind CSS configuration
+└── README.md             # Project documentation
 ```
 
 ## 👥 Team Members
 
 ### Babin Bid
-- **Role**: Frontend Developer
-- **Degree**: B.Tech CSE (3rd Year), Adamas University, Kolkata, India
-- **Location**: Adamas University, Kolkata, West Bengal, India
-- **Focus**: Building scalable, interactive web interfaces, UI/UX, Animations
-- **GitHub**: [KGFCH2](https://github.com/KGFCH2)
-- **LinkedIn**: [babin-bid](https://www.linkedin.com/in/babin-bid-853728293/)
+### Babin Bid
+- **Role**: Full Stack Developer, Problem Solver
+- **Bio**: Innovative idea generator at midnight; loves Python as a programming language; primarily works on frontend projects. Researcher and midnight bug fixer — often coding while enjoying a cup of chai.
+- **GitHub**: https://github.com/KGFCH2
+- **LinkedIn**: https://www.linkedin.com/in/babin-bid-853728293/
 
 ### Debasmita Bose
-- **Role**: Backend Developer
-- **Degree**: B.Tech CSE (3rd Year), Adamas University, Kolkata, India
-- **Location**: Adamas University, Kolkata, West Bengal, India
-- **Focus**: Robust backend architectures, API development, Database management
-- **GitHub**: [GitHub](https://github.com/DebasmitaBose0)
-- **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/debasmita-bose-0002b329a/)
+### Debasmita Bose
+- **Role**: Frontend Developer
+- **Bio**: Builds robust logic, problem solver, idea creator and script writer. Junior researcher focused on reliable, well-structured frontend solutions.
+- **GitHub**: https://github.com/DebasmitaBose0
+- **LinkedIn**: https://www.linkedin.com/in/debasmita-bose-0002b329a/
 
 ## 🎯 Key Projects
 
@@ -169,22 +150,19 @@ The BinaryBond portfolio embodies professionalism with a touch of innovation. We
 - **Fonts**: Modify `index.html` for Google Fonts integration
 - **Animations**: Adjust Framer Motion settings in components
 
-## 📊 Performance
-
-- **Lighthouse Score**: 95+ on all metrics
-- **Bundle Size**: Optimized with code splitting
-- **Load Time**: < 2 seconds on standard connections
-- **SEO**: Meta tags and structured data included
+## 📊 Notes
+- This project is a local development portfolio: performance and Lighthouse scores depend on build and hosting environment.
+- For production readiness, run `npm run build` and verify in your chosen hosting environment.
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
+Contributions are welcome. Suggested workflow:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Install dependencies and test locally: `npm install && npm run dev`
+4. Commit and push your branch
+5. Open a Pull Request describing your changes
 
 ## 📝 License
 
@@ -192,8 +170,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Email**: [babinbid05@gmail.com](mailto:babinbid05@gmail.com) | [dbose272@gmail.com](mailto:dbose272@gmail.com)
-- **GitHub Organization**: [Binary-Bond](https://github.com/Binary-Bond)
+- **Email**: babinbid05@gmail.com | dbose272@gmail.com
+- **GitHub Organization**: https://github.com/Binary-Bond
 - **Location**: Adamas University, Kolkata, West Bengal, India
 
 ## 🙏 Acknowledgments
