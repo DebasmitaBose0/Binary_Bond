@@ -123,8 +123,8 @@ binarybond-portfolio/
 - **Degree**: B.Tech CSE (3rd Year), Adamas University, Kolkata, India
 - **Location**: Adamas University, Kolkata, West Bengal, India
 - **Focus**: Robust backend architectures, API development, Database management
-- **GitHub**: [GitHub](#)
-- **LinkedIn**: [LinkedIn](#)
+- **GitHub**: [GitHub](https://github.com/DebasmitaBose0)
+- **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/debasmita-bose-0002b329a/)
 
 ## 🎯 Key Projects
 
