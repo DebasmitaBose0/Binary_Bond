@@ -53,7 +53,7 @@ function App() {
                     lineIndex++
                     charIndex = 0
                 }
-                } else {
+            } else {
                 clearInterval(typeInterval)
                 setLoadingProgress(100)
                 setTimeout(() => {
