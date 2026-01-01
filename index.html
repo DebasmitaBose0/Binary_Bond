@@ -17,6 +17,34 @@
 </head>
 
 <body>
+    <script>
+        // On browser reload, wait for the app to mount then remove any hash/path
+        // from the address bar by replacing history (no full navigation).
+        (function () {
+            try {
+                var entries = performance.getEntriesByType && performance.getEntriesByType('navigation');
+                var nav = Array.isArray(entries) && entries[0] ? entries[0] : null;
+                var isReload = false;
+                if (nav && nav.type) {
+                    isReload = nav.type === 'reload';
+                } else if (performance.navigation) {
+                    isReload = performance.navigation.type === 1;
+                }
+
+                if (isReload) {
+                    setTimeout(function () {
+                        try {
+                            history.replaceState(null, '', '/');
+                        } catch (e) {
+                            // fallback: do nothing
+                        }
+                    }, 600);
+                }
+            } catch (e) {
+                // ignore
+            }
+        })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 </body>
