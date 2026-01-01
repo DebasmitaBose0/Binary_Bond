@@ -44,7 +44,7 @@ This repository contains the BinaryBond V1.0 team portfolio — a modern, Vite-p
 1. Clone the repository
 ```bash
 git clone <your-repo-url>
-cd binarybond-v1.0
+cd Binary_Bond
 ```
 
 2. Install dependencies
@@ -73,10 +73,19 @@ To preview the production build locally:
 npm run preview
 ```
 
+Ignored files
+
+- This repository ignores runtime/dependency and build artifacts. Common ignored entries in this project are:
+
+- `node_modules/`
+- `dist/`
+- `.vscode/`
+- `public/` (static assets may be kept out of commits in some workflows)
+
 ## 📁 Project Structure
 
 ```
-project-root/
+Binary_Bond/
 ├── public/               # Static assets and manifest
 ├── src/
 │   ├── components/       # React components (Hero, Navbar, Team, Projects, Contact, Footer, etc.)
@@ -84,6 +93,8 @@ project-root/
 │   ├── App.jsx           # Main application component
 │   ├── main.jsx          # Application entry point (loads `index.css`)
 │   └── index.css         # Global styles and utilities
+├── dist/                 # Production build output (generated)
+├── node_modules/         # Installed dependencies (ignored)
 ├── index.html            # HTML template
 ├── package.json          # Dependencies and scripts
 ├── vite.config.js        # Vite configuration
@@ -94,18 +105,16 @@ project-root/
 ## 👥 Team Members
 
 ### Babin Bid
-### Babin Bid
 - **Role**: Full Stack Developer, Problem Solver
 - **Bio**: Innovative idea generator at midnight; loves Python as a programming language; primarily works on frontend projects. Researcher and midnight bug fixer — often coding while enjoying a cup of chai.
-- **GitHub**: https://github.com/KGFCH2
-- **LinkedIn**: https://www.linkedin.com/in/babin-bid-853728293/
+- **GitHub**: [Babin Bid](https://github.com/KGFCH2)
+- **LinkedIn**: [Babin Bid](https://www.linkedin.com/in/babin-bid-853728293/)
 
-### Debasmita Bose
 ### Debasmita Bose
 - **Role**: Frontend Developer
 - **Bio**: Builds robust logic, problem solver, idea creator and script writer. Junior researcher focused on reliable, well-structured frontend solutions.
-- **GitHub**: https://github.com/DebasmitaBose0
-- **LinkedIn**: https://www.linkedin.com/in/debasmita-bose-0002b329a/
+- **GitHub**: [Debasmita Bose](https://github.com/DebasmitaBose0)
+- **LinkedIn**: [Debasmita Bose](https://www.linkedin.com/in/debasmita-bose-0002b329a/)
 
 ## 🎯 Key Projects
 
