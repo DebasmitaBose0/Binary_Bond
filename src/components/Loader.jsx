@@ -3,18 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function Loader({ loadingText = '', loadingProgress = 0 }) {
     const isHalfway = loadingProgress >= 50
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            // Replace the current history entry to always show `#home` in the URL bar
-            try {
-                if (window.location.hash !== '#home') {
-                    history.replaceState(null, '', '#home')
-                }
-            } catch (e) {
-                // noop - browsers without history support will ignore
-            }
-        }
-    }, [])
+    // No URL mutations here; index.html handles base-origin redirect on reload.
 
     return (
         <motion.div
