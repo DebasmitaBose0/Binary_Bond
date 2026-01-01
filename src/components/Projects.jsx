@@ -72,7 +72,7 @@ const Projects = () => {
             domain: "Healthcare AI",
             github: "https://github.com/KGFCH2/Heart_Disease_Prediction_System",
             status: "completed",
-            image: "/Heart_Disease_Prediction_System_New.png",
+            image: "/Heart_Disease_Prediction_System.png",
             stats: { accuracy: "78.65%", speed: "0.34ms" },
             accent: "from-green-500 to-cyan-400"
         },
