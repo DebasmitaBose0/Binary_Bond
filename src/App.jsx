@@ -15,6 +15,7 @@ import Loader from './components/Loader'
 
 function App() {
     const [loading, setLoading] = useState(true)
+    const [showEntry, setShowEntry] = useState(false)
     const [loadingText, setLoadingText] = useState('')
     const [loadingProgress, setLoadingProgress] = useState(0)
 
@@ -52,10 +53,15 @@ function App() {
                     lineIndex++
                     charIndex = 0
                 }
-            } else {
+                } else {
                 clearInterval(typeInterval)
                 setLoadingProgress(100)
-                setTimeout(() => setLoading(false), 700)
+                setTimeout(() => {
+                    setLoading(false)
+                    // trigger short "hacker-style" entry reveal
+                    setShowEntry(true)
+                    setTimeout(() => setShowEntry(false), 900)
+                }, 700)
             }
         }, 30)
 
@@ -67,18 +73,31 @@ function App() {
             {loading ? (
                 <Loader loadingText={loadingText} loadingProgress={loadingProgress} />
             ) : (
-                <div className="min-h-screen bg-black relative z-0">
-                    <Navbar />
-                    <Hero />
-                    <Team />
-                    <Skills />
-                    <Projects />
-                    <Workflow />
-                    <Achievements />
-                    <Collaborate />
-                    <Contact />
-                    <Footer />
-                </div>
+                <>
+                    {/* Hacker-style entry reveal overlay */}
+                    {showEntry && (
+                        <div className="fixed inset-0 bg-black z-50 flex items-center justify-center pointer-events-none">
+                            <div className="text-center text-green-400 font-mono text-3xl sm:text-5xl opacity-95 animate-pulse">
+                                <div>ACCESS GRANTED</div>
+                                <div className="text-sm mt-2 text-green-300">Initializing secure shell...</div>
+                            </div>
+                            <div className="absolute inset-0 opacity-10 bg-[repeating-linear-gradient(0deg,#000, #000 2px, rgba(0,255,0,0.03) 3px, rgba(0,255,0,0.03) 4px)]" />
+                        </div>
+                    )}
+
+                    <div className="min-h-screen bg-black relative z-0">
+                        <Navbar />
+                        <Hero />
+                        <Team />
+                        <Skills />
+                        <Projects />
+                        <Workflow />
+                        <Achievements />
+                        <Collaborate />
+                        <Contact />
+                        <Footer />
+                    </div>
+                </>
             )}
         </ThemeProvider>
     )
