@@ -1,0 +1,16 @@
+{
+    "name": "BinaryBond V1.0 Portfolio",
+    "short_name": "BinaryBond V1.0",
+    "description": "A dual-person portfolio for Babin Bid and Debasmita Bose",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#22c55e",
+    "icons": [
+        {
+            "src": "https://cdn-icons-png.flaticon.com/128/4472/4472856.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ]
+}
